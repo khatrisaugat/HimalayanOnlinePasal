@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 const theme = StyleSheet.create({
     container: {
         flex: 1,
@@ -29,7 +29,7 @@ const theme = StyleSheet.create({
     appButtonContainer: {
         flex: 1,
         flexDirection: "row",
-        elevation: 8,
+        // elevation: 8,
         // backgroundColor: "#009688",
         borderRadius: 10,
         paddingVertical: 10,
@@ -73,7 +73,183 @@ const theme = StyleSheet.create({
         elevation: 5
     },
     headerStyles: {
-        backgroundColor: "#a8dadc"
+        backgroundColor: "#009688"
+    },
+    ScrollViewStyle: {
+        backgroundColor: "#ccc",
+        flex: 1,
+        paddingBottom: 15,
+        marginBottom: 50
+    },
+    singleProductView: {
+        backgroundColor: "#fff",
+        display: "flex",
+        position: "relative",
+        width: Dimensions.get('window').width / 2 - 25,
+        height: 300,
+        borderRadius: 15,
+        borderBottomRightRadius: 0,
+        borderBottomLeftRadius: 0,
+        alignItems: "center",
+        justifyContent: "center",
+        marginRight: 10,
+        marginTop: 20
+
+    },
+    cardImage: {
+        display: "flex",
+        position: "absolute",
+        width: Dimensions.get('window').width / 2 - 25,
+        height: 150,
+        borderRadius: 15,
+        borderBottomRightRadius: 0,
+        borderBottomLeftRadius: 0,
+        top: 0
+    },
+    cardBody: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        position: "absolute",
+        top: 150,
+    },
+    cardHeading: {
+        fontSize: 18,
+        padding: 10,
+        maxHeight: 70
+    },
+    cardPrice: {
+        fontSize: 16,
+        fontWeight: "600",
+        color: "#e63946"
+    },
+    strikePrice: {
+        textDecorationLine: "line-through"
+    },
+    addToCartBtn: {
+        flex: 1,
+        flexDirection: "row",
+        elevation: 8,
+        backgroundColor: "#009688",
+        borderRadius: 10,
+        paddingVertical: 10,
+        paddingHorizontal: 12,
+        width: Dimensions.get('window').width / 3 - 25
+    },
+    ProductView: {
+        flex: 1,
+        width: "100%",
+        alignItems: "stretch",
+        justifyContent: "space-evenly",
+        paddingRight: 0,
+        paddingLeft: 0,
+        marginRight: 0,
+        marginLeft: 0
+    },
+    row: {
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "stretch",
+        paddingTop: 10,
+        paddingBottom: 10,
+        paddingRight: 0,
+        paddingLeft: 0,
+        marginRight: 0,
+        marginLeft: 0
+    },
+    headingText: {
+        fontSize: 24,
+        fontWeight: "600",
+        alignSelf: "flex-start",
+        left: 0
+    },
+    verticalScrollView: {
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        alignItems: "center",
+        justifyContent: "space-around"
+    },
+    simpleCard: {
+        display: "flex",
+        width: Dimensions.get('window').width - 25,
+        alignItems: "center",
+        justifyContent: "space-around",
+        backgroundColor: "#fff",
+        padding: 25,
+        borderRadius: 15,
+        alignSelf: "center",
+        marginTop: 25,
+        borderBottomWidth: 3,
+        borderTopWidth: 3,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        elevation: 5,
+    },
+    loginInput: {
+        height: 40,
+        backgroundColor: "#fff",
+        width: Dimensions.get('window').width / 1.5,
+        borderWidth: 1.5,
+        borderRadius: 10,
+        padding: 4,
+        margin: 4,
+    },
+    simpleBtn: {
+        display: "flex",
+        flexDirection: "row",
+        width: (Dimensions.get('window').width / 1.5) / 2,
+        backgroundColor: "#1d3557",
+        alignItems: "center",
+        justifyContent: "center",
+        height: 40,
+        borderRadius: 10,
+        marginBottom: 10
+    },
+    simpleLinkBtn: {
+        backfaceVisibility: "visible"
+    },
+    categoriesHeading: {
+        backgroundColor: "#ccc",
+        width: Dimensions.get("window").width / 4,
+        height: Dimensions.get("window").height - 50,
+        margin: 5,
+        marginLeft: 0,
+        padding: 5,
+        borderRightWidth: 3,
+        borderRadius: 10,
+        paddingBottom: 50,
+
+    },
+    categoriesItems: {
+        // backgroundColor: "#fff",
+        width: (Dimensions.get("window").width / 4) * 3 - 20,
+        height: Dimensions.get("window").height - 50,
+        margin: 5,
+        padding: 5,
+        paddingBottom: 50,
+    },
+    categories: {
+        backgroundColor: "#fff",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-start",
+        justifyContent: "space-between",
+        width: Dimensions.get("window").width,
+    },
+    singleCategory: {
+        flex: 1,
+        borderBottomWidth: 2,
+        alignItems: "center",
+        justifyContent: "space-evenly"
+    },
+    categoryIcon: {
+        height: 35,
+        width: 35
     }
+
 });
 export default theme;

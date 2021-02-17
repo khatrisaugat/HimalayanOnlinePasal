@@ -29,22 +29,32 @@ const products = [
     {
         id: 1,
         name: "Iphone X",
-        image: require('../assets/iphonex.png')
+        image: require('../assets/iphone.jpg'),
+        price: 200000
     },
     {
         id: 2,
         name: "Ipad",
-        image: require('../assets/ipad.png')
+        image: require('../assets/ipad.jpg'),
+        price: 150000
     },
     {
         id: 3,
         name: "Imac",
-        image: require('../assets/imac1.png')
+        image: require('../assets/phone.jpg'),
+        price: 300000
     },
     {
         id: 4,
         name: "Macbook",
-        image: require('../assets/Macbook.png')
+        image: require('../assets/macbook.jpg'),
+        price: 250000
+    },
+    {
+        id: 5,
+        name: "Macbook",
+        image: require('../assets/Macbook.png'),
+        price: 260000
     }
 
 ];

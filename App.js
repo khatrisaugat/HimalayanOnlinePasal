@@ -9,6 +9,9 @@ import HomeScreen from './screens/HomeScreen';
 import Categories from './screens/Categories';
 import Account from './screens/Account';
 import Cart from './screens/Cart';
+import Login from './screens/Login';
+import SignUp from './screens/SignUp';
+
 import theme from './constants/theme';
 //icons
 // import { MaterialIcons } from '@expo/vector-icons';
@@ -33,26 +36,30 @@ export default function App() {
       {/* <SafeAreaView style={styles.TopNav}> */}
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} options={{
-          headerTitle: `Himalayan Online Store`,
+          headerTitle: `Jhola Online`,
           headerStyle: theme.headerStyles
         }} />
         <Stack.Screen name="Categories" component={Categories} />
         <Stack.Screen name="Account" component={Account} />
         <Stack.Screen name="Cart" component={Cart} />
+        {/* <Stack.Screen name="Login" component={Login} /> */}
+        <Stack.Screen name="Login" component={Login} options={{ stackPresentation: 'modal', animationEnabled: true }} />
+        <Stack.Screen name="SignUp" component={SignUp} options={{ stackPresentation: 'modal', animationEnabled: true }} />
+
       </Stack.Navigator>
       {/* </SafeAreaView> */}
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#a8dadc"
-  },
-  TopNav: {
-    flex: 1,
-    backgroundColor: "#1d3557",
-    height: 20
-  }
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: "#a8dadc"
+//   },
+//   TopNav: {
+//     flex: 1,
+//     backgroundColor: "#1d3557",
+//     height: 20
+//   }
+// });
