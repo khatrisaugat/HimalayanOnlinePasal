@@ -18,8 +18,12 @@ const Account = ({ navigation }) => {
     return (
         <View style={theme.container}>
             {/* <Text>Account Screen</Text> */}
-            <Button title="Go to Login" onPress={GotoLogin} />
-            <Button title="Go to SignUp" onPress={GotoSignUp} />
+            <View style={theme.centerFlex}>
+                <Button title="Go to Login" onPress={GotoLogin} />
+                <Button title="Go to SignUp" onPress={GotoSignUp} />
+            </View>
+
+
 
             {/* <Login /> */}
             <Footer />

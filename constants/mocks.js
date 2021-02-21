@@ -59,6 +59,18 @@ const products = [
 
 ];
 const cart = [
+    {
+        id: 1,
+        name: "Iphone X",
+        image: require('../assets/iphone.jpg'),
+        price: 200000
+    },
+    {
+        id: 2,
+        name: "Ipad",
+        image: require('../assets/ipad.jpg'),
+        price: 150000
+    },
 
 ];
 

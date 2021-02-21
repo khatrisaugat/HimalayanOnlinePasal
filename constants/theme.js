@@ -73,7 +73,7 @@ const theme = StyleSheet.create({
         elevation: 5
     },
     headerStyles: {
-        backgroundColor: "#009688"
+        backgroundColor: "#fff"
     },
     ScrollViewStyle: {
         backgroundColor: "#ccc",
@@ -116,7 +116,8 @@ const theme = StyleSheet.create({
     cardHeading: {
         fontSize: 18,
         padding: 10,
-        maxHeight: 70
+        maxHeight: 70,
+        fontWeight: "600",
     },
     cardPrice: {
         fontSize: 16,
@@ -249,6 +250,80 @@ const theme = StyleSheet.create({
     categoryIcon: {
         height: 35,
         width: 35
+    },
+    cartItemContainer: {
+        flex: 1,
+        justifyContent: "space-around",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        backgroundColor: "#fff",
+        marginLeft: 2,
+        position: "relative",
+        minHeight: 110,
+    },
+    cartImage: {
+        display: "flex",
+        // alignSelf: "auto",
+        height: 100,
+        width: 100,
+        position: "absolute",
+        left: 10,
+        top: 5,
+    },
+    cartItemText: {
+        display: "flex",
+        position: "absolute",
+        left: Dimensions.get('window').width / 2,
+        alignItems: "flex-start",
+        justifyContent: "center"
+    },
+    checkbox: {
+        display: "flex",
+        position: "absolute",
+        right: 5,
+        width: 20,
+        height: 20,
+        borderRadius: 20,
+        top: 40,
+        borderWidth: 2
+    },
+    checkRadioSelected: {
+        borderWidth: 2,
+        borderColor: "#fff",
+        backgroundColor: "#000",
+        width: 16,
+        height: 16,
+        borderRadius: 16
+    },
+    checkRadio: {
+        borderWidth: 2,
+        borderColor: "#fff",
+        backgroundColor: "#fff",
+        width: 16,
+        height: 16,
+        borderRadius: 16
+    },
+    cartHeading: {
+        flex: 1,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-evenly",
+        minHeight: 100,
+        backgroundColor: "#ded9e2"
+    },
+    CheckOutBtnView: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        margin: 0,
+        position: "absolute",
+        bottom: 50,
+        left: 0,
+        right: 0,
+        // marginTop: 15,
+        // marginTop: 0,
+        backgroundColor: "#ded9e2",
+        height: 70
     }
 
 });

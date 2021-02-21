@@ -4,6 +4,7 @@ import theme from '../constants/theme';
 import { MaterialIcons } from '@expo/vector-icons';
 
 
+
 const SingleProduct = (props) => {
     function addToCart() {
         //add  to cart
